@@ -1,0 +1,23 @@
+        variables
+        ---------
+There are 3 types of variable types
+    1. string       Default type: String 
+    2. list 
+    3. map 
+
+
+Syntax:                 
+variable [Name]{
+    [option] = [value]
+}
+
+Example:
+variable "image_name" {
+    description = "This is the image of the contaier"
+    default     = "nginx:latest"
+}
+
+
+
+#############   Calling the vars.tfvars file during execution
+terraform plan --var-file=vars.tfvars
