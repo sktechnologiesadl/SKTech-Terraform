@@ -12,10 +12,9 @@ variable "instance_type"{
     #default = "t2.micro"
 }
 ######## AWS - Provider
-provider "aws"{
+provider "aws" {
     region = "ap-south-1"
-    access_key = "AKIAQQDEPS7XQO7FVQ57"
-    secret_key = "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"
+    profile = "default"
 }
 ######## EC2-Instance creation 
 resource "aws_instance" "res1_ec2" {
